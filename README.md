@@ -2,8 +2,6 @@
 
 A small repo that stands in for a customer's codebase, for demoing Guardener and the [Chainguard Console Insights dashboard](https://www.chainguard.dev/unchained/introducing-the-chainguard-console-insights-dashboard-powered-by-guardener). It has upstream container images in the places Guardener reads: a Dockerfile, a Compose file, Kubernetes manifests and Helm values.
 
-You run the whole demo from GitHub, the Chainguard Console and `chainctl`. You do not need to clone this repo. Each presenter uses their own copy in a GitHub organization they own, linked to their own Chainguard organization.
-
 Guardener is in Early Access and only works with GitHub. Commands and behavior below come from the [Guardener docs](https://edu.chainguard.dev/chainguard/guardener/) as of late October 2026. They can change, so skim the docs before you present.
 
 ## What is in it
