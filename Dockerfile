@@ -1,5 +1,5 @@
 # Upstream base image. Guardener should swap this for the Chainguard python image with the matching tag.
-FROM python:3.12
+FROM cgr.dev/aj.com/python-fips:3.12
 
 WORKDIR /app
 COPY app/app.py .
