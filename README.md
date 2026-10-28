@@ -69,19 +69,7 @@ chainctl guardener scans list --parent <chainguard-org-name> --repo <github-org>
 
 When a scan shows up here, the repo should appear in the Insights dashboard. If the Insights dashboard is not yet visible in your Console, use the screenshots from the launch post and say it is rolling out.
 
-## Demo flow
-
-### 1. Insights dashboard
-
-Open the Chainguard Console and show the Insights dashboard for your organization: the per-image inventory across repos, the suggested Chainguard equivalent for each, the CVE difference, and the mitigated CVE summary. Point out that this came from the GitHub App reading the repo. No agent, no CI change.
-
-Fallback if the dashboard is not live for you: `chainctl guardener scans list` output plus the launch post screenshots.
-
-### 2. (Optional) Discover from the CLI
-
-`chainctl images discover` scans a local directory, and you have not cloned anything, so use the `--image` form from step 3 of the prep. It shows the same ranking Guardener uses and a status per image.
-
-### 3. Turn migration on
+### 5. Turn migration on
 
 Do this in the GitHub web UI on your copy:
 
@@ -91,9 +79,17 @@ Do this in the GitHub web UI on your copy:
 
 The file turns on two things: `enabled: true` is Container Image Suggestions (the guardrail in step 5), and `migrate.enabled: true` is Container Image Migration (the pull request in step 4).
 
-If the Console offers it, you can show enabling migration from the Insights dashboard instead. The YAML file is the documented path and always works.
+If the Console offers it, you can show enabling migration from the Insights dashboard instead. The YAML file is the documented path and always works. (Make sure to do this a day in advance, it might take 24 hours to see results).
 
-### 4. Review the migration pull request
+## Demo flow
+
+### 1. Insights dashboard
+
+Open the Chainguard Console and show the Insights dashboard for your organization: the per-image inventory across repos, the suggested Chainguard equivalent for each, the CVE difference, and the mitigated CVE summary. Point out that this came from the GitHub App reading the repo. No agent, no CI change.
+
+Fallback if the dashboard is not live for you: `chainctl guardener scans list` output plus the launch post screenshots.
+
+### 2. Review the migration pull request
 
 A pull request titled **Migrate container images to Chainguard equivalents** appears from a branch under `guardener/images/`. If it has not shown up after about ten minutes, trigger it:
 
