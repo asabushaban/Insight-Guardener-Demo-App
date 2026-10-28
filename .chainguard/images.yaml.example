@@ -1,0 +1,4 @@
+# Step 4 of the demo: copy this to .chainguard/images.yaml and commit it to the DEFAULT branch.
+# The push that adds the file starts the first migration. Check the Guardener docs for the full schema.
+migrate:
+  enabled: true

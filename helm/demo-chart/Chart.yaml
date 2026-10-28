@@ -1,0 +1,5 @@
+apiVersion: v2
+name: demo-chart
+description: Sample chart with an upstream image in values.yaml
+version: 0.1.0
+appVersion: "1.27"
