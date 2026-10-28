@@ -52,7 +52,7 @@ Follow [Getting started with Guardener](https://edu.chainguard.dev/chainguard/gu
 
 Guardener never adds images to your organization. A reference is only swapped when the replacement image **and the matching tag** are already in your catalog.
 
-1. In the Console, go to **Images**, then **Chainguard catalog** > **Add to org** (needs the `owner` role). Add `python`, `nginx`, `redis` and `memcached`.
+1. In the Console,  go to **Chainguard catalog** > **Add to org** (needs the `owner` role). Add `python`, `nginx`, `redis` and `memcached`. 
 2. **Do not add `postgres`.** That is what produces the "Not migrated" line in the demo.
 3. Tags take a few minutes to sync. Then check every image resolves as `entitled`:
    ```bash
