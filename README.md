@@ -4,15 +4,15 @@ A small repo for the Guardener and Insights walkthrough. It has upstream contain
 
 ## What is in it
 
-| File | Upstream image | Why it is here |
-|---|---|---|
-| `Dockerfile` | `python:3.12` | A clean swap. Exec-form `CMD`, so it works without a shell. |
-| `docker-compose.yml` | `redis:7`, `postgres:16` | `postgres:16` is left out of the catalog on purpose to show "Not migrated". |
-| `k8s/web.yaml` | `nginx:1.27` | Kubernetes manifest. |
-| `k8s/cache.yaml` | `redis:7` | Kubernetes manifest. |
-| `helm/demo-chart/values.yaml` | `nginx:1.27` | Helm values. |
-| `scripts/make_guardrail_branch.sh` | `memcached:1.6` | Creates the second branch with a NEW upstream image for the guardrail demo. |
-| `.chainguard/images.yaml.example` | n/a | The file you commit in step 4. It is not active until you rename it. |
+| File | Upstream image |
+|---|---|
+| `Dockerfile` | `python:3.12` |
+| `docker-compose.yml` | `redis:7`, `postgres:16` |
+| `k8s/web.yaml` | `nginx:1.27` |
+| `k8s/cache.yaml` | `redis:7` |
+| `helm/demo-chart/values.yaml` | `nginx:1.27` |
+| `scripts/make_guardrail_branch.sh` | `memcached:1.6` |
+| `.chainguard/images.yaml.example` | n/a |
 
 ## Prerequisites (from the slide)
 
