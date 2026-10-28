@@ -4,10 +4,10 @@ services:
     ports:
       - "8080:8080"
   cache:
-    image: redis:7
+    image: cgr.dev/aj.com/redis-fips:7
   db:
     # Leave this image OUT of your Chainguard catalog on purpose.
     # Guardener lists it as "Not migrated", which is a good thing to show.
-    image: postgres:16
+    image: cgr.dev/aj.com/postgres-fips:16
     environment:
       POSTGRES_PASSWORD: example
