@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# Step 6 of the demo: creates a branch that adds a NEW upstream image, so you can open the PR and show the guardrail.
-# Run it from the repo root, after the first migration has merged.
+# Demo step 5: creates a branch that adds a NEW upstream image, so you can open the PR and show the guardrail.
+# Only for people who cloned the repo. The README has the same step done in the GitHub web UI, which is the
+# expected path. Run it from the repo root, after the migration pull request has merged.
 set -euo pipefail
 BRANCH="demo/add-memcached"
 git checkout -b "$BRANCH"

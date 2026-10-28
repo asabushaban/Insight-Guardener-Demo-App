@@ -1,4 +1,11 @@
-# Step 4 of the demo: copy this to .chainguard/images.yaml and commit it to the DEFAULT branch.
-# The push that adds the file starts the first migration. Check the Guardener docs for the full schema.
+# Demo step 3: rename this file to .chainguard/images.yaml and commit it to the DEFAULT branch (main).
+# Guardener only reads this file from the default branch. The push that adds it starts the first migration.
+#
+# Both keys are needed for the demo:
+#   enabled         turns on Container Image Suggestions (the review comment in the guardrail step)
+#   migrate.enabled turns on Container Image Migration (the migration pull request)
+#
+# Full schema: https://edu.chainguard.dev/chainguard/guardener/github/image-migration/
+enabled: true
 migrate:
   enabled: true
